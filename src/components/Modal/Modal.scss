@@ -1,0 +1,55 @@
+.Modal {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3)
+  }
+
+  &__content {
+    background-color: #fff;
+    width: 60%;
+    height: fit-content;
+    padding: 32px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    &::before,
+    &::after {
+      content: ' ';
+      position: absolute;
+      display: block;
+      left: 4px;
+      height: 10px;
+      width: 2px;
+      background-color: #333;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

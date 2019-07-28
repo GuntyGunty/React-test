@@ -1,0 +1,32 @@
+.MyGame {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__text {
+    font-family: "Menlo", sans-serif;
+    font-size: 14px;
+  
+    span {
+      &.-red {
+        font-weight: 900;
+        color: red;
+      }
+    }
+  }
+  
+  &__button {
+    border: none;
+    padding: 10px 20px;
+    background-color: limegreen;
+    font-weight: 900;
+    transition: .3s;
+  
+    &:hover {
+      background-color: lightgreen;
+    }
+  }
+}

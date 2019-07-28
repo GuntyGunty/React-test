@@ -1,0 +1,15 @@
+.Button {
+  border: 1px solid #bfbfbf;
+  border-radius: 1em;
+  background-color: transparent;
+  margin: 10px 0;
+  margin-right: 10px;
+  outline: none;
+
+  &.-tab {
+    width: 60px;
+    border-radius: 0;
+    margin-right: -1px;
+  }
+}
+
